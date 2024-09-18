@@ -9,20 +9,31 @@
 </head>
 <body>
     <section class="html-svg">
+        <p>
+            Created in the HTML document
+        </p>
+        <section>
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40"/>
+            </svg>
 
-        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="40"/>
-        </svg>
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%"/>
+            </svg>
 
-        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%"/>
-        </svg>
-
-        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%"/>
-            <circle cx="50" cy="50" r="30"/>
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%"/>
+                <circle cx="50" cy="50" r="30"/>
+            </svg>
+        </section>
+    </section>
+    <section class="imported-svg">
+        <p>
+            Created in an SVG document and linked to the HTML document
+        </p>
+        <svg>
+            <use href="image/alien.svg#alien"></use>
         </svg>
     </section>
-
 </body>
 </html>
